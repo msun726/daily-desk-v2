@@ -1,0 +1,2 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('dailyDeskDesktop',Object.freeze({health:()=>ipcRenderer.invoke('desk:health'),setApiKey:key=>ipcRenderer.invoke('desk:set-key',key),clearApiKey:()=>ipcRenderer.invoke('desk:clear-key'),analyzeCourse:payload=>ipcRenderer.invoke('desk:course',payload),extractJob:payload=>ipcRenderer.invoke('desk:job',payload),windowAction:action=>ipcRenderer.invoke('desk:window',action)}));

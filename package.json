@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "electron": "44.8.0"
+  },
+  "name": "daily-desk",
+  "version": "0.2.0",
+  "type": "module",
+  "productName": "Daily Desk",
+  "private": true,
+  "scripts": {
+    "check": "node --check main.mjs && node --check preload.cjs && node --check desk-core.js && node --check review.js && node --check review-map.js && node --check career.js && node --check full-backup.js && node --check desktop-ui.js && node --check course-ai.js && node --check ai-server.mjs && node --check job-ai.mjs",
+    "start": "electron ."
+  },
+  "main": "main.mjs"
+}

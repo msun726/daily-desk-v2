@@ -1,0 +1,12 @@
+node_modules/
+Data/
+data/
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+*.exe
+*.lnk
+DailyDesk-full-*.json
+*-backup*.json
